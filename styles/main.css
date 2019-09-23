@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+}
+
+/* header */ 
+
+@font-face {
+  font-family: headerfont;
+  src: url(../fonts/Lobster_1.3.otf);
+}
+
+header {
+  font-weight: bold;
+}
+
+.header-logo {
+  float: left;
+  margin-left: 10px;
+}
+
+.header-logo > img {
+  height: 60px;
+  width: 60px;
+}
+
+#main-header {
+  margin-top: 20px;
+  height: 80px;
+}
+
+#header-name {
+  font-family: headerfont;
+  font-size: 40px;
+  color: #564f40;;
+  padding: 15px;
+  margin: 8px 0px;
+  font-weight: bold;
+  text-shadow: 5px 5px 6px #cbcbcb;
+}
+
+/* main section */
+
+#drinks-machine {
+  position: relative;
+  margin: auto;
+  width: 991px;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+#readout-box {
+  position: absolute;
+  left: 0;
+  top: 11%;
+  width: 40%;
+  margin: 0 30%;
+  min-height: 10%;
+  max-height: 17%;
+  font-size: 20px;
+  color: #e9e5e5;
+  text-align: center;
+  background-color: #0034df;
+  padding: 2% 1%;
+  border: 1px solid #0034df;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 7px 4px rgba(0,11,117,1);
+  -moz-box-shadow: 0px 0px 7px 4px rgba(0,11,117,1);
+  box-shadow: 0px 0px 7px 4px rgba(58,67,160,1);
+}
+
+.drink-item {
+  display: inline-block;
+  width: 30%;
+  position: relative;
+}
+
+.drink-img {
+  width: 60%;
+}
+
+.drink-name {
+  position: absolute;
+  top: 100%;
+  color: #e9e5e5;
+  width: 100%;
+  height: 35%;
+  padding-top: 5%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.drink-button {
+  position: absolute;
+  top: 140%;
+  margin: 15% 35%;
+  left: 0;
+  height: 60%;
+  width: 30%;
+  background-color: #393939;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 7px #f6f2f2;
+  -moz-box-shadow: 0 0 7px #f6f2f2;
+  box-shadow: 0 0 7px #f6f2f2;
+}
+
+#drink-buttons-section {
+  position: absolute;
+  width: 100%;
+  bottom: 63%;
+  padding: 0 20%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.drink-button:hover{
+  cursor: pointer;
+}
+
+.button-clicked {
+  box-sizing: border-box;
+  border: 3px solid #39941e;
+}
+
+/* footer */
+
+footer {
+  background-color: #dfdddb;
+  margin: 22px 20px;
+  padding: 10px;	
+}
+
+address {
+  text-align: center;
+}
+
+/* media query */
+
+@media only screen and (max-width: 991px){
+  #drinks-machine {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  #readout-box {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 479px){
+  #readout-box {
+    font-size: 15px;
+  }
+  .drink-name {
+    font-size: 12px;
+    height: 40%;
+  }
+  .drink-button {
+    top: 145%;
+  }
+}
